@@ -1,5 +1,6 @@
 package bandeau;
 
+//commentaire test 
 import java.awt.Color;
 import java.awt.Font;
 
@@ -12,9 +13,17 @@ public class Pub_JUL {
     }
 
     public void exemple() {
+
+        monBandeau.setBackground(Color.BLACK);
+        monBandeau.setForeground(Color.YELLOW);
+        monBandeau.setMessage("Il est de retour ...");
+        for (int i = 5; i < 50; i += 5) {
+            monBandeau.setFont(new Font("Dialog", Font.BOLD, 5 + i));
+            monBandeau.sleep(100);
+        }
+
         Font font = monBandeau.getFont();
         Color back = monBandeau.getBackground();
-        Color fore = monBandeau.getForeground();
 
         monBandeau.sleep(1000);
         monBandeau.setMessage("EN TOURNÉE DANS TOUTE LA FRANCE");
@@ -22,5 +31,7 @@ public class Pub_JUL {
             monBandeau.setFont(new Font("Dialog", Font.BOLD, 5 + i));
             monBandeau.sleep(100);
         }
+
     }
+
 }

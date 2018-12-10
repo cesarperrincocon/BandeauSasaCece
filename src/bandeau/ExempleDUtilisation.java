@@ -15,7 +15,7 @@ public class ExempleDUtilisation {
         Color back = monBandeau.getBackground();
         Color fore = monBandeau.getForeground();
 
-        monBandeau.setMessage("Hello");
+                monBandeau.setMessage("Hello");
 		monBandeau.sleep(1000);
 		monBandeau.setMessage("On va changer de police");
 		monBandeau.sleep(1000);
