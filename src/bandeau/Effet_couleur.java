@@ -15,7 +15,7 @@ import java.awt.Font;
  *
  * @author ssylvest
  */
-public class Effet_couleur {
+public class Effet_couleur extends Effet {
     
 private Bandeau monBandeau;
 
@@ -27,14 +27,18 @@ private Bandeau monBandeau;
 
 
 
+@Override
 public void animation(){
-monBandeau.setBackground(Color.BLACK);
+    
+        Font font = monBandeau.getFont();
+        Color back = monBandeau.getBackground();
+        Color fore = monBandeau.getForeground();
+    
+        monBandeau.setBackground(Color.BLACK);
         monBandeau.setForeground(Color.YELLOW);
-        for (int i = 5; i < 50; i += 5) {
-            monBandeau.setFont(new Font("Dialog", Font.BOLD, 5 + i));
-            monBandeau.sleep(100);
+
         }
 
 }
-}
+
 

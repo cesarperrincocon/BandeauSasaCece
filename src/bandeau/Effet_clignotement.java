@@ -9,7 +9,7 @@ package bandeau;
  *
  * @author cperrinc
  */
-public class Effet_clignotement {
+public class Effet_clignotement extends Effet{
 
     private Bandeau monBandeau;
 

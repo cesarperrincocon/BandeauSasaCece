@@ -6,7 +6,7 @@ import java.awt.Font;
  *
  * @author cperrinc
  */
-public class Effet_zoom {
+public class Effet_zoom extends Effet{
 
     public Effet_zoom(Bandeau monBandeau) {
         this.monBandeau = monBandeau;
