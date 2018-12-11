@@ -18,11 +18,12 @@ public class Scenario {
     
 private Bandeau monBandeau;
 private final Effet_rotation maRotation = new Effet_rotation(monBandeau);
-private final Effet_couleur maCouleur = new Effet_Couleur(monBandeau);
+private final Effet_couleur maCouleur = new Effet_couleur(monBandeau);
 private final Effet_zoom monZoom = new Effet_zoom(monBandeau);
 private final Effet_clignotement monMot = new Effet_clignotement(monBandeau);
 protected ArrayList<Effet> mesEffets = new ArrayList<>();
-    
+
+
        public Scenario(Bandeau monBandeau){
         this.monBandeau = monBandeau;
     } 
@@ -34,10 +35,10 @@ protected ArrayList<Effet> mesEffets = new ArrayList<>();
        
        maCouleur.animation();
        monBandeau.setMessage("IL EST DE RETOUR...");
-       monZoom.animation;
+       monZoom.animation();
        monBandeau.sleep(1000);
        monBandeau.setMessage("EN TOURNEE DANS TOUTE LA FRANCE !");
-       monZoom.animation;
+       monZoom.animation();
        monBandeau.sleep(1000);
        monBandeau.setMessage("JUL");
        maRotation.animation();
