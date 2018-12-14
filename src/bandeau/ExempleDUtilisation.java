@@ -12,11 +12,12 @@ public class ExempleDUtilisation {
         Effet_couleur maCouleur = new Effet_couleur(monBandeau);
         Effet_rotation maRotation = new Effet_rotation(monBandeau, "IL EST DE RETOUR...");        
         Effet_zoom monZoom = new Effet_zoom(monBandeau, "EN TOURNEE DANS TOUTE LA FRANCE !");
-        Effet_zoom monZoom = new Effet_zoom(monBandeau, "JUL");
+        Effet_zoom monZoom2 = new Effet_zoom(monBandeau, "JUL");
         Effet_clignotement monClignotement = new Effet_clignotement(monBandeau, "BORDEAUX");
         scenario.ajouterEffet(maCouleur);
         scenario.ajouterEffet(maRotation);
         scenario.ajouterEffet(monZoom);
+        scenario.ajouterEffet(monZoom2);
         scenario.ajouterEffet(monClignotement);
         scenario.jouerScenario();
     }
