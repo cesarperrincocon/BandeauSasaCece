@@ -23,7 +23,7 @@ public class Effet_rotation extends Effet {
   
   
     public void animation(){
-    
+    monBandeau.setMessage(msg);
     for (int i = 0; i <= 100; i++) {
 			monBandeau.setRotation(2*Math.PI*i / 100);
 			monBandeau.sleep(100);

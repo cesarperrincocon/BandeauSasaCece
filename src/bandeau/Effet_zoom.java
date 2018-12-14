@@ -19,7 +19,7 @@ public class Effet_zoom extends Effet{
 
  
     public void animation() {
-        
+        monBandeau.setMessage(msg);
         for (int i = 5; i < 50; i += 5) {
             monBandeau.setFont(new Font("Dialog", Font.BOLD, 5 + i));
             monBandeau.sleep(100);

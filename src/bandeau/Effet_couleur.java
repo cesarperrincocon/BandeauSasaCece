@@ -18,12 +18,12 @@ import java.awt.Font;
 public class Effet_couleur extends Effet {
     
 private Bandeau monBandeau;
-private String msg;
 
 
-      public Effet_couleur(Bandeau monBandeau, String msg){
+
+      public Effet_couleur(Bandeau monBandeau){
         this.monBandeau = monBandeau;
-        this.msg=msg;
+        
     
     }
 
@@ -35,7 +35,7 @@ public void animation(){
         Font font = monBandeau.getFont();
         Color back = monBandeau.getBackground();
         Color fore = monBandeau.getForeground();
-    
+        
         monBandeau.setBackground(Color.BLACK);
         monBandeau.setForeground(Color.YELLOW);
 
