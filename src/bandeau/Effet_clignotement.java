@@ -20,7 +20,8 @@ public class Effet_clignotement extends Effet{
     }
 
     public void animation() {
-        for (int i = 0; i < 11; i += 1) {
+        monBandeau.setMessage(msg);
+        for (int i = 0; i < 11; i += 1) {            
             monBandeau.sleep(250);
             monBandeau.setMessage("");
             monBandeau.sleep(250);
