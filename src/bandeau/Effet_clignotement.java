@@ -9,23 +9,22 @@ package bandeau;
  *
  * @author cperrinc
  */
-public class Effet_clignotement extends Effet{
+public class Effet_clignotement extends Effet {
 
     private Bandeau monBandeau;
     private String msg;
 
     public Effet_clignotement(Bandeau monBandeau, String msg) {
         this.monBandeau = monBandeau;
-        this.msg=msg;
+        this.msg = msg;
     }
 
     public void animation() {
         monBandeau.setMessage(msg);
-        for (int i = 0; i < 11; i += 1) {            
-            monBandeau.sleep(250);
-            monBandeau.setMessage("");
-            monBandeau.sleep(250);
-        }
-    }
 
+        monBandeau.sleep(250);
+        monBandeau.setMessage("");
+        monBandeau.sleep(250);
+
+    }
 }

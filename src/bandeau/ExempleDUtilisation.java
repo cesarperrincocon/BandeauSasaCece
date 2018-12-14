@@ -14,11 +14,26 @@ public class ExempleDUtilisation {
         Effet_zoom monZoom = new Effet_zoom(monBandeau, "EN TOURNEE DANS TOUTE LA FRANCE !");
         Effet_zoom monZoom2 = new Effet_zoom(monBandeau, "JUL");
         Effet_clignotement monClignotement = new Effet_clignotement(monBandeau, "BORDEAUX");
+        Effet_clignotement monClignotement1 = new Effet_clignotement(monBandeau, "NANTES");
+        Effet_clignotement monClignotement2 = new Effet_clignotement(monBandeau, "LYON");
+        Effet_clignotement monClignotement3 = new Effet_clignotement(monBandeau, "PARIS");
+        Effet_clignotement monClignotement4 = new Effet_clignotement(monBandeau, "RENNES");
+        Effet_clignotement monClignotement5 = new Effet_clignotement(monBandeau, "TOULOUSE");
+        Effet_clignotement monClignotement6 = new Effet_clignotement(monBandeau, "LES VILLARDS SUR THONES");
+        Effet_zoom monZoom3 = new Effet_zoom(monBandeau, "MARSEILLE");
+        
         scenario.ajouterEffet(maCouleur);
         scenario.ajouterEffet(maRotation);
         scenario.ajouterEffet(monZoom);
         scenario.ajouterEffet(monZoom2);
         scenario.ajouterEffet(monClignotement);
+        scenario.ajouterEffet(monClignotement1);
+        scenario.ajouterEffet(monClignotement2);
+        scenario.ajouterEffet(monClignotement3);
+        scenario.ajouterEffet(monClignotement4);
+        scenario.ajouterEffet(monClignotement5);
+        scenario.ajouterEffet(monClignotement6);
+        scenario.ajouterEffet(monZoom3);
         scenario.jouerScenario();
     }
 
