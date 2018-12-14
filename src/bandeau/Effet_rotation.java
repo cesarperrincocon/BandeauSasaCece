@@ -11,11 +11,12 @@ package bandeau;
  */
 public class Effet_rotation extends Effet {
   private Bandeau monBandeau;  
-    
+  private String msg;  
    
   
-      public Effet_rotation(Bandeau monBandeau){
+      public Effet_rotation(Bandeau monBandeau, String msg){
         this.monBandeau = monBandeau;
+        this.msg=msg;
     
     }
   

@@ -8,12 +8,16 @@ import java.awt.Font;
  */
 public class Effet_zoom extends Effet{
 
-    public Effet_zoom(Bandeau monBandeau) {
+       private Bandeau monBandeau;
+    private String msg;
+
+    
+    public Effet_zoom(Bandeau monBandeau, String msg) {
         this.monBandeau = monBandeau;
+        this.msg=msg;
     }
 
-    private Bandeau monBandeau;
-
+ 
     public void animation() {
         
         for (int i = 5; i < 50; i += 5) {

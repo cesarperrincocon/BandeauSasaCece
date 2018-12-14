@@ -12,9 +12,11 @@ package bandeau;
 public class Effet_clignotement extends Effet{
 
     private Bandeau monBandeau;
+    private String msg;
 
-    public Effet_clignotement(Bandeau monBandeau) {
+    public Effet_clignotement(Bandeau monBandeau, String msg) {
         this.monBandeau = monBandeau;
+        this.msg=msg;
     }
 
     public void animation() {

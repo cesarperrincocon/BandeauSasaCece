@@ -18,10 +18,12 @@ import java.awt.Font;
 public class Effet_couleur extends Effet {
     
 private Bandeau monBandeau;
+private String msg;
 
 
-      public Effet_couleur(Bandeau monBandeau){
+      public Effet_couleur(Bandeau monBandeau, String msg){
         this.monBandeau = monBandeau;
+        this.msg=msg;
     
     }
 
